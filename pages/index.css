@@ -1,0 +1,15 @@
+@import "../vendor/normalize.css";
+@import "../vendor/fonts/fonts.css";
+.page {
+  background-color: #191d2c;
+  min-width: 320px;
+  max-width: 100%;
+  min-height: 100vh;
+  font-family: SourceSansPro, Monserrat, sans-serif;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}/*# sourceMappingURL=index.css.map */
