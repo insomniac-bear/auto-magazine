@@ -1,0 +1,63 @@
+.first-screen {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, min-content) 1fr;
+  grid-template-areas:
+    "car-name image"
+    "title image"
+    "car-feature image"
+    "button image";
+  justify-items: center;
+  align-items: start;
+  margin: 0;
+  padding: 149px 0 150px 0;
+  max-width: $max-width;
+  min-width: $min-width;
+  width: 100%;
+  border-bottom: 1px solid $primary-color;
+
+  &__text {
+    grid-area: car-name;
+    margin: 31px 0 0 0;
+    padding: 0;
+    color: $primary-color;
+    font-size: 19px;
+    line-height: 1.47;
+    text-transform: uppercase;
+
+    &_type_feature {
+      margin-top: 52px;
+      grid-area: car-feature;
+    }
+  }
+
+  &__title {
+    grid-area: title;
+    margin: 30px 0 0 0;
+    padding: 0;
+    color: $primary-color;
+    font-size: 65px;
+    font-weight: 400;
+    line-height: 1.12;
+    text-align: center;
+  }
+
+  &__button {
+    grid-area: button;
+    margin-top:59px;
+    padding: 23px 135px 22px;
+    color: $primary-color;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: $secondary-color;
+    border: 1px solid $primary-color;
+    box-sizing: border-box;
+  }
+
+  &__image {
+    grid-area: image;
+    width: 100%;
+    height: auto;
+  }
+}
