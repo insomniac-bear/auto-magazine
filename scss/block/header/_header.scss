@@ -1,0 +1,21 @@
+.header {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid $primary-color;
+  min-width: $min-width;
+  width: 100%;
+  box-sizing: border-box;
+
+  &__container {
+    display: flex;
+    margin: 0 auto;
+    padding: 16px 50px;
+    max-width: $max-width;
+    min-width: $min-width;
+    box-sizing: border-box;
+  }
+
+  &__nav {
+    flex-basis: 43.1%;
+  }
+}

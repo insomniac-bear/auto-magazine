@@ -1,0 +1,30 @@
+.nav {
+  margin: 0;
+  padding: 8px 0;
+  box-sizing: border-box;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 19px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    margin: 0;
+    padding: 0;
+
+    color: $primary-color;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.33;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
