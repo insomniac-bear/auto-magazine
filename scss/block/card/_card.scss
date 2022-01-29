@@ -1,0 +1,76 @@
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  grid-template-areas:
+    "title title"
+    "navigation link";
+  align-content: space-between;
+  justify-content: space-between;
+  margin: 0;
+  padding: 50px;
+  min-height: 499px;
+  border-left: 1px solid $primary-color;
+  box-sizing: border-box;
+
+  &__content {
+    grid-area: title;
+    margin: 0;
+    padding: 0;
+    color: $primary-color;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.4;
+
+    &_dedicated {
+      font-weight: 400;
+    }
+  }
+
+  &__button {
+    grid-area: link;
+    display: block;
+    padding: 11px 25px;
+    color: $primary-color;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.47;
+    text-decoration: none;
+    border: 1px solid $primary-color;
+    border-radius: 50%;
+    transition: background-color .5s ease, color .5s ease;
+
+    &:hover {
+      color: $secondary-color;
+      background-color: $primary-color;
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__pagination-item {
+    margin-right: 13px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__navigation {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 12px;
+    height: 12px;
+    background-color: $secondary-color;
+    border: 1px solid $primary-color;
+    border-radius: 50%;
+    box-sizing: border-box;
+
+    &:disabled {
+      background-color: $primary-color;
+    }
+  }
+}
