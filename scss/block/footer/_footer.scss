@@ -1,0 +1,30 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  padding: 0;
+  min-width: $min-width;
+  max-width: $max-width;
+  width: 100%;
+  border-top: 1px solid $primary-color;
+  box-sizing: border-box;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 50px;
+    border-left: 1px solid $primary-color;
+    box-sizing: border-box;
+  }
+
+  &__copyright {
+    margin: 0;
+    padding: 0;
+    color: $primary-color;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 1;
+  }
+}

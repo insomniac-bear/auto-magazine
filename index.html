@@ -90,13 +90,15 @@
     <form action="echo" class="form">
       <h2 class="form__title">Подписка</h2>
       <p class="form__text">На новые спецвыпуски машин.</p>
-      <input type="text" class="form__item" placeholder="Имя" name="name" aria-label="Введите имя" required>
-      <input type="text" class="form__item" placeholder="Фамилия" name="surname" aria-label="Введите фамилию" required>
-      <input type="email" class="form__item" placeholder="Почта" name="email" aria-label="Введите почту" required>
-      <button class="button form__button" type="submit">Подписка</button>
+      <div class="form__container">
+        <input type="text" class="form__item form__item_type_name" placeholder="Имя" name="name" aria-label="Введите имя" required>
+        <input type="text" class="form__item form__item_type_surname" placeholder="Фамилия" name="surname" aria-label="Введите фамилию" required>
+        <input type="email" class="form__item form__item_type_mail" placeholder="Почта" name="email" aria-label="Введите почту" required>
+        <button class="button form__button" type="submit">Подписка</button>
+      </div>
     </form>
     <div class="footer__container">
-      <img src="./images/logo.svg" alt="Логотип журнала Auto-magazine" class="logo logo_place_footer">
+      <img src="./images/logo.svg" alt="Логотип журнала Auto-magazine" class="logo">
       <p class="footer__copyright">© Auto-Magazine 2021</p>
     </div>
   </footer>
