@@ -84,3 +84,45 @@
     }
   }
 }
+@media screen and (max-width: $mobile-width) {
+  .facts {
+    grid-template-areas:
+      "content"
+      "positive"
+      "negative";
+    grid-template-columns: 1fr;
+
+    &__text {
+      margin: 18px auto;
+      font-size: 16px;
+      line-height: 1.69;
+    }
+
+    &__container {
+      padding: 19px 20px 20px;
+
+      &_type_negative {
+        border-left: none;
+      }
+    }
+
+    &__title {
+      font-size: 22px;
+      line-height: 1;
+    }
+
+    &__list {
+      margin-top: 40px;
+    }
+
+    &__item {
+      margin-bottom: 6px;
+    }
+
+    &__feature {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+  }
+}

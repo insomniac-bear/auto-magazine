@@ -79,3 +79,34 @@
     border: none;
   }
 }
+
+@media screen and (max-width: $mobile-width) {
+  .form {
+    padding: 20px 20px 0;
+
+    &__title {
+      font-size: 26px;
+      line-height: 1;
+    }
+
+    &__text {
+      margin-top: 14px;
+      font-size: 14px;
+      line-height: 1;
+    }
+
+    &__container {
+      margin-top:60px;
+      width: 280px;
+    }
+
+    &__item {
+      padding: 4px 10px 8px;
+      width: 140px;
+
+      &_type_mail {
+        width: 200px;
+      }
+    }
+  }
+}
