@@ -28,3 +28,11 @@
     line-height: 1;
   }
 }
+
+@media screen and (max-width: $tablet-width) {
+  .footer {
+    &__container {
+      border-left: none;
+    }
+  }
+}

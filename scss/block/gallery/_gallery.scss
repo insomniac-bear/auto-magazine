@@ -57,3 +57,22 @@
     }
   }
 }
+
+@media screen and (max-width: $tablet-width) {
+  .gallery {
+    padding: 34px 34px 49px;
+    width: 100%;
+
+    &__image {
+      height: 66vw;
+    }
+
+    &__title {
+      margin: 53px 0 0 17px;
+    }
+
+    &__controls {
+      padding-right: 15px;
+    }
+  }
+}
