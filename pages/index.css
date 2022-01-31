@@ -38,6 +38,11 @@
   line-height: 1.33;
   text-decoration: none;
   text-transform: uppercase;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+}
+.nav__link:hover {
+  opacity: 0.6;
 }
 .nav__close-button {
   display: none;
@@ -204,6 +209,12 @@
   background-color: #191d2c;
   border: 1px solid #e1fd2c;
   box-sizing: border-box;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+.first-screen__button:hover {
+  color: #191d2c;
+  background-color: #e1fd2c;
 }
 .first-screen__image {
   display: block;
@@ -406,6 +417,11 @@
   background-position: center;
   border: none;
   box-sizing: border-box;
+  transition: opacity 0.6s ease;
+  cursor: pointer;
+}
+.gallery__control:hover {
+  opacity: 0.6;
 }
 .gallery__control_type_forward {
   margin-left: 28px;
@@ -544,6 +560,7 @@
   border: 1px solid #e1fd2c;
   border-radius: 50%;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .card__navigation:disabled {
   background-color: #e1fd2c;
@@ -651,12 +668,20 @@
   background-color: #191d2c;
   border: 1px solid #e1fd2c;
   width: 170px;
+  color: #e1fd2c;
+  font-size: 9px;
+  letter-spacing: 1px;
+  line-height: 2;
+  text-transform: uppercase;
   box-sizing: border-box;
+  caret-color: #e1fd2c;
+  outline: none;
 }
 .form__item::-moz-placeholder {
   color: #e1fd2c;
   font-size: 9px;
   font-weight: 400;
+  letter-spacing: 1px;
   line-height: 2;
   text-transform: uppercase;
 }
@@ -664,6 +689,7 @@
   color: #e1fd2c;
   font-size: 9px;
   font-weight: 400;
+  letter-spacing: 1px;
   line-height: 2;
   text-transform: uppercase;
 }
@@ -671,8 +697,18 @@
   color: #e1fd2c;
   font-size: 9px;
   font-weight: 400;
+  letter-spacing: 1px;
   line-height: 2;
   text-transform: uppercase;
+}
+.form__item:focus::-moz-placeholder {
+  color: transparent;
+}
+.form__item:focus:-ms-input-placeholder {
+  color: transparent;
+}
+.form__item:focus::placeholder {
+  color: transparent;
 }
 .form__item_type_name {
   grid-area: name;
@@ -700,6 +736,7 @@
   text-transform: uppercase;
   background-color: #e1fd2c;
   border: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {

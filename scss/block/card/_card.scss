@@ -68,6 +68,7 @@
     border: 1px solid $primary-color;
     border-radius: 50%;
     box-sizing: border-box;
+    cursor: pointer;
 
     &:disabled {
       background-color: $primary-color;
