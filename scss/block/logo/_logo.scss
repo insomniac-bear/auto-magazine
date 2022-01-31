@@ -9,3 +9,15 @@
     padding-left: 37%;
   }
 }
+
+@media screen and (max-width: $mobile-width) {
+  .logo {
+    padding-left: 32%;
+    width: 35.5%;
+    
+    &_place_footer {
+      padding-left: 0;
+      width: 100%;
+    }
+  }
+}

@@ -74,3 +74,27 @@
     }
   }
 }
+
+@media screen and (max-width: $tablet-width) {
+  .card {
+    border-left: none;
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .card {
+    padding: 20px;
+    min-height: 286px;
+
+    &__content {
+      font-size: 16px;
+      line-height: 27px;
+    }
+
+    &__button {
+      padding: 6px 22px;
+      font-size: 14px;
+      line-height: 2;
+    }
+  }
+}

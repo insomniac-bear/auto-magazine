@@ -62,3 +62,17 @@
     }
   }
 }
+
+@media screen and (max-width: $mobile-width) {
+  .header {
+    &__container {
+      padding: 24px 18px;
+    }
+
+    &__menu-button {
+      margin-top: 0;
+      width: 25px;
+      height: 18px;
+    }
+  }
+}
