@@ -17,4 +17,48 @@
   &__nav {
     flex-basis: 43.1%;
   }
+
+  &__menu-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $tablet-width) {
+  .header {
+    &__container {
+      position: relative;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 16px 34px;
+    }
+
+    &__nav {
+      display: none;
+
+      &_opened {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 28px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: $secondary-color;
+      }
+    }
+
+    &__menu-button {
+      display: block;
+      margin-top: 7px;
+      width: 30px;
+      height: 22px;
+      background-color: $secondary-color;
+      background-image: url(../images/menu-icon.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      border: none;
+    }
+  }
 }

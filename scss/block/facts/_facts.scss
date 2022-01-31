@@ -55,3 +55,32 @@
     line-height: 1.45;
   }
 }
+
+@media screen and (max-width: $tablet-width) {
+  .facts {
+    grid-template-areas:
+      "content content"
+      "positive negative";
+    grid-template-columns: 1fr 1fr;
+
+    &__text {
+      grid-area: content;
+      margin: 40px auto 45px;
+      width: 87.14%;
+    }
+
+    &__container {
+      padding-bottom: 278px;
+      border-top: 1px solid $primary-color;
+
+      &_type_positive {
+        grid-area: positive;
+        border-left: none;
+      }
+
+      &_type_negative {
+        grid-area: negative;
+      }
+    }
+  }
+}

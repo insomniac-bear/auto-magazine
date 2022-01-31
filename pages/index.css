@@ -39,13 +39,37 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+.nav__close-button {
+  display: none;
+}
 
+@media screen and (max-width: 1023px) {
+  .nav__list {
+    margin-left: 6px;
+  }
+  .nav__close-button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #191d2c;
+    background-image: url(../images/close-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+  }
+}
 .logo {
   display: block;
   margin: 0;
   padding: 0;
 }
 
+@media screen and (max-width: 1023px) {
+  .logo {
+    padding-left: 37%;
+  }
+}
 .header {
   margin: 0;
   padding: 0;
@@ -64,7 +88,44 @@
 .header__nav {
   flex-basis: 43.1%;
 }
+.header__menu-button {
+  display: none;
+}
 
+@media screen and (max-width: 1023px) {
+  .header__container {
+    position: relative;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 16px 34px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__nav_opened {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 28px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #191d2c;
+  }
+  .header__menu-button {
+    display: block;
+    margin-top: 7px;
+    width: 30px;
+    height: 22px;
+    background-color: #191d2c;
+    background-image: url(../images/menu-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+  }
+}
 .main {
   margin: 0 auto;
   max-width: 1440px;
@@ -124,11 +185,30 @@
   box-sizing: border-box;
 }
 .first-screen__image {
+  display: block;
   grid-area: image;
   width: 100%;
   height: auto;
 }
 
+@media screen and (max-width: 1023px) {
+  .first-screen {
+    grid-template-areas: "car-name" "title" "car-feature" "image" "button";
+    grid-template-columns: 1fr;
+    padding: 69px 0 100px;
+  }
+  .first-screen__title {
+    width: 60%;
+  }
+  .first-screen__button {
+    margin-top: 99px;
+  }
+  .first-screen__image {
+    margin: 100px auto 0;
+    width: 91.14%;
+    height: 66.4vw;
+  }
+}
 .facts {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
@@ -178,6 +258,28 @@
   line-height: 1.45;
 }
 
+@media screen and (max-width: 1023px) {
+  .facts {
+    grid-template-areas: "content content" "positive negative";
+    grid-template-columns: 1fr 1fr;
+  }
+  .facts__text {
+    grid-area: content;
+    margin: 40px auto 45px;
+    width: 87.14%;
+  }
+  .facts__container {
+    padding-bottom: 278px;
+    border-top: 1px solid #e1fd2c;
+  }
+  .facts__container_type_positive {
+    grid-area: positive;
+    border-left: none;
+  }
+  .facts__container_type_negative {
+    grid-area: negative;
+  }
+}
 .gallery {
   display: grid;
   grid-template-areas: "img img" "title controls";
@@ -232,6 +334,21 @@
   transform: rotate(180deg);
 }
 
+@media screen and (max-width: 1023px) {
+  .gallery {
+    padding: 34px 34px 49px;
+    width: 100%;
+  }
+  .gallery__image {
+    height: 66vw;
+  }
+  .gallery__title {
+    margin: 53px 0 0 17px;
+  }
+  .gallery__controls {
+    padding-right: 15px;
+  }
+}
 .press {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -249,6 +366,18 @@
   line-height: 1;
 }
 
+@media screen and (max-width: 1023px) {
+  .press {
+    grid-template-columns: 1fr;
+  }
+  .press__title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+}
 .card {
   display: grid;
   grid-template-columns: repeat(2, -webkit-min-content);
@@ -345,6 +474,11 @@
   line-height: 1;
 }
 
+@media screen and (max-width: 1023px) {
+  .footer__container {
+    border-left: none;
+  }
+}
 .form {
   margin: 0;
   padding: 50px;

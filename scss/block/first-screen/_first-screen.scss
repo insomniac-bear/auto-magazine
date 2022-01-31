@@ -56,8 +56,37 @@
   }
 
   &__image {
+    display: block;
     grid-area: image;
     width: 100%;
     height: auto;
   }
+}
+
+@media screen and (max-width: $tablet-width) {
+  .first-screen {
+    grid-template-areas:
+      "car-name"
+      "title"
+      "car-feature"
+      "image"
+      "button";
+    grid-template-columns: 1fr;
+    padding: 69px 0 100px;
+
+    &__title {
+      width: 60%;
+    }
+
+    &__button {
+      margin-top: 99px;
+    }
+
+    &__image {
+      margin: 100px auto 0;
+      width: 91.14%;
+      height: 66.4vw;
+    }
+  }
+
 }
