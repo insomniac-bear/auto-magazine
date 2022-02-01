@@ -7,11 +7,10 @@
   box-sizing: border-box;
 
   &__title {
+    @include text-properties($normal-weight);
     margin: 0;
     padding: 50px;
-    color: $primary-color;
     font-size: 46px;
-    font-weight: 400;
     line-height: 1;
   }
 }

@@ -20,9 +20,9 @@
   }
 
   &__copyright {
+    @include text-properties($normal-weight);
     margin: 0;
     padding: 0;
-    color: $primary-color;
     font-size: 13px;
     letter-spacing: 1px;
     line-height: 1;
