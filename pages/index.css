@@ -29,11 +29,11 @@
   margin-right: 0;
 }
 .nav__link {
+  color: #e1fd2c;
+  font-weight: 400;
   margin: 0;
   padding: 0;
-  color: #e1fd2c;
   font-size: 12px;
-  font-weight: 400;
   letter-spacing: 1px;
   line-height: 1.33;
   text-decoration: none;
@@ -178,10 +178,11 @@
   box-sizing: border-box;
 }
 .first-screen__text {
+  color: #e1fd2c;
+  font-weight: 400;
   grid-area: car-name;
   margin: 31px 0 0 0;
   padding: 0;
-  color: #e1fd2c;
   font-size: 19px;
   line-height: 1.47;
   text-transform: uppercase;
@@ -191,20 +192,21 @@
   grid-area: car-feature;
 }
 .first-screen__title {
+  color: #e1fd2c;
+  font-weight: 400;
   grid-area: title;
   margin: 30px 0 0 0;
   padding: 0;
-  color: #e1fd2c;
   font-size: 65px;
-  font-weight: 400;
   line-height: 1.12;
   text-align: center;
 }
 .first-screen__button {
+  color: #e1fd2c;
+  font-weight: 400;
   grid-area: button;
   margin-top: 59px;
   padding: 23px 135px 22px;
-  color: #e1fd2c;
   font-size: 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -276,11 +278,11 @@
   border-bottom: 1px solid #e1fd2c;
 }
 .facts__text {
+  color: #e1fd2c;
+  font-weight: 300;
   margin: 40px 110px 45px 50px;
   padding: 0;
-  color: #e1fd2c;
   font-size: 30px;
-  font-weight: 300;
   line-height: 1.4;
   box-sizing: border-box;
 }
@@ -292,10 +294,10 @@
   border-left: 1px solid #e1fd2c;
 }
 .facts__title {
-  margin: 0;
   color: #e1fd2c;
-  font-size: 30px;
   font-weight: 400;
+  margin: 0;
+  font-size: 30px;
   letter-spacing: 2px;
   line-height: 1.23;
   text-transform: uppercase;
@@ -310,11 +312,11 @@
   margin-bottom: 0;
 }
 .facts__feature {
+  color: #e1fd2c;
+  font-weight: 300;
   margin: 0;
   padding: 0;
-  color: #e1fd2c;
   font-size: 22px;
-  font-weight: 300;
   line-height: 1.45;
 }
 
@@ -393,12 +395,12 @@
   height: auto;
 }
 .gallery__title {
+  color: #e1fd2c;
+  font-weight: 400;
   grid-area: title;
   margin: 51px 0 0 50px;
   padding: 0;
-  color: #e1fd2c;
   font-size: 46px;
-  font-weight: 400;
   line-height: 1;
 }
 .gallery__controls {
@@ -480,11 +482,11 @@
   box-sizing: border-box;
 }
 .press__title {
+  color: #e1fd2c;
+  font-weight: 400;
   margin: 0;
   padding: 50px;
-  color: #e1fd2c;
   font-size: 46px;
-  font-weight: 400;
   line-height: 1;
 }
 
@@ -514,10 +516,10 @@
   box-sizing: border-box;
 }
 .card__content {
-  grid-area: title;
   color: #e1fd2c;
-  font-size: 30px;
   font-weight: 300;
+  grid-area: title;
+  font-size: 30px;
   line-height: 1.4;
 }
 .card__content-text {
@@ -529,12 +531,12 @@
   font-weight: 400;
 }
 .card__button {
+  color: #e1fd2c;
+  font-weight: 400;
   grid-area: link;
   display: block;
   padding: 11px 25px;
-  color: #e1fd2c;
   font-size: 19px;
-  font-weight: 400;
   line-height: 1.47;
   text-decoration: none;
   border: 1px solid #e1fd2c;
@@ -614,9 +616,10 @@
   box-sizing: border-box;
 }
 .footer__copyright {
+  color: #e1fd2c;
+  font-weight: 400;
   margin: 0;
   padding: 0;
-  color: #e1fd2c;
   font-size: 13px;
   letter-spacing: 1px;
   line-height: 1;
@@ -645,17 +648,18 @@
   padding: 50px;
 }
 .form__title {
+  color: #e1fd2c;
+  font-weight: 400;
   margin: 0;
   padding: 0;
-  color: #e1fd2c;
   font-size: 46px;
-  font-weight: 400;
   line-height: 1;
 }
 .form__text {
+  color: #e1fd2c;
+  font-weight: 400;
   margin: 16px 0 0 0;
   padding: 0;
-  color: #e1fd2c;
   font-size: 19px;
   line-height: 1.47;
 }
@@ -669,13 +673,14 @@
   width: 339px;
 }
 .form__item {
+  color: #e1fd2c;
+  font-weight: 400;
   display: block;
   margin: 0;
   padding: 4px 10px 6px;
   background-color: #191d2c;
   border: 1px solid #e1fd2c;
   width: 170px;
-  color: #e1fd2c;
   font-size: 9px;
   letter-spacing: 1px;
   line-height: 2;

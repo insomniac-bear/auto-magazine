@@ -18,10 +18,10 @@
   box-sizing: border-box;
 
   &__text {
+    @include text-properties($normal-weight);
     grid-area: car-name;
     margin: 31px 0 0 0;
     padding: 0;
-    color: $primary-color;
     font-size: 19px;
     line-height: 1.47;
     text-transform: uppercase;
@@ -33,21 +33,20 @@
   }
 
   &__title {
+    @include text-properties($normal-weight);
     grid-area: title;
     margin: 30px 0 0 0;
     padding: 0;
-    color: $primary-color;
     font-size: 65px;
-    font-weight: 400;
     line-height: 1.12;
     text-align: center;
   }
 
   &__button {
+    @include text-properties($normal-weight);
     grid-area: button;
     margin-top:59px;
     padding: 23px 135px 22px;
-    color: $primary-color;
     font-size: 15px;
     letter-spacing: 1px;
     text-transform: uppercase;

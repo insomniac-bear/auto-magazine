@@ -22,12 +22,11 @@
   }
 
   &__title {
+    @include text-properties($normal-weight);
     grid-area: title;
     margin: 51px 0 0 50px;
     padding: 0;
-    color: $primary-color;
     font-size: 46px;
-    font-weight: 400;
     line-height: 1;
   }
 
