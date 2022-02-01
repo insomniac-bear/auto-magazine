@@ -1,9 +1,9 @@
 .card {
   display: grid;
-  grid-template-columns: repeat(2, min-content);
+  grid-template-columns: repeat(3, min-content);
   grid-template-areas:
-    "title title"
-    "navigation link";
+    "title title title"
+    "navigation . link";
   align-content: space-between;
   justify-content: space-between;
   margin: 0;
@@ -14,17 +14,21 @@
 
   &__content {
     grid-area: title;
-    margin: 0;
-    padding: 0;
     color: $primary-color;
     font-size: 30px;
     font-weight: 300;
     line-height: 1.4;
+  }
 
-    &_dedicated {
+  &__content-text {
+    display: inline;
+    margin: 0;
+    padding: 0;
+
+  }
+    &__content-title {
       font-weight: 400;
     }
-  }
 
   &__button {
     grid-area: link;
@@ -38,6 +42,7 @@
     border: 1px solid $primary-color;
     border-radius: 50%;
     transition: background-color .5s ease, color .5s ease;
+    box-sizing: border-box;
 
     &:hover {
       color: $secondary-color;
@@ -46,6 +51,7 @@
   }
 
   &__pagination {
+    grid-area: navigation;
     display: flex;
     align-items: flex-end;
   }
