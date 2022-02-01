@@ -21,6 +21,22 @@ const galleryContent = [
   }
 ];
 let activePhoto = 0;
+const pressCard = document.querySelector('.card');
+const pressName = pressCard.querySelector('.card__content-title');
+const pressText = pressCard.querySelector('.card__content-text');
+const pressLink = pressCard.querySelector('.card__button');
+const pressPaginations = pressCard.querySelectorAll('.card__navigation');
+const pressContent = [
+  {
+    magazine: 'Engadget: ',
+    content: 'VW’s e-BULLI concept shows how your classic van can become an EV.',
+    link: 'https://www.engadget.com/2020-03-20-vw-unveils-e-bulli-t1-electric-conversion.html',
+  }, {
+    magazine: 'Drive.ru: ',
+    content: 'Вэн Volkswagen e-Bulli скрестил классику с современной техникой.',
+    link: 'https://www.drive.ru/news/volkswagen/5e7447bdec05c4b251000010.html',
+  }
+];
 
 function openMenu () {
   nav.classList.add('header__nav_opened');
@@ -45,7 +61,24 @@ function viewPreviousPhoto () {
   changePhotoAttribute(galleryContent[activePhoto].url, galleryContent[activePhoto].name);
 }
 
+function changeCardContent (evt) {
+  const contentIndex = evt.target.dataset.number;
+  pressPaginations.forEach(it => {
+    
+    if (it.disabled) {
+      it.removeAttribute('disabled');
+    }
+  });
+  evt.target.setAttribute('disabled', '');
+  pressName.textContent = pressContent[contentIndex].magazine;
+  pressText.textContent = pressContent[contentIndex].content;
+  pressLink.href = pressContent[contentIndex].link;
+}
+
 openMenuButton.addEventListener('click', openMenu);
 closeMenuButton.addEventListener('click', closeMenu);
 galleryForwardButton.addEventListener('click', viewNextPhoto);
 galleryBackButton.addEventListener('click', viewPreviousPhoto);
+pressPaginations.forEach(it => {
+  it.addEventListener('click', changeCardContent);
+});
