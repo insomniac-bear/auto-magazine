@@ -1,5 +1,6 @@
 const header = document.querySelector('.header');
 const nav = header.querySelector('.header__nav');
+const headerLogo = header.querySelector('.logo_place_header');
 const closeMenuButton = nav.querySelector('.nav__close-button');
 const openMenuButton = header.querySelector('.header__menu-button');
 const gallery = document.querySelector('.gallery');
@@ -39,10 +40,14 @@ const pressContent = [
 ];
 
 function openMenu () {
+  headerLogo.classList.add('logo_hidden');
+  openMenuButton.classList.add('header__menu-button_hidden');
   nav.classList.add('header__nav_opened');
 }
 
 function closeMenu () {
+  headerLogo.classList.remove('logo_hidden');
+  openMenuButton.classList.remove('header__menu-button_hidden');
   nav.classList.remove('header__nav_opened');
 }
 

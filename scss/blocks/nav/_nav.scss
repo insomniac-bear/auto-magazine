@@ -41,19 +41,38 @@
 @media screen and (max-width: $tablet-width) {
   .nav {
     &__list {
-      margin-left: 6px;
+      margin-left: 2px;
     }
 
     &__close-button {
       display: block;
-      width: 40px;
-      height: 40px;
+      width: 31px;
+      height: 38px;
       background-color: $secondary-color;
       background-image: url(../images/close-icon.svg);
       background-position: center;
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: cover;
       border: none;
     }
   }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .nav {
+    &__item {
+      margin-right: 16px;
+    }
+
+    &__link {
+      font-size: 11px;
+      line-height: 1.45;
+    }
+
+    &__close-button {
+      width: 28px;
+      height: 21px;
+    }
+  }
+  
 }

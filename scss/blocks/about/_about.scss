@@ -1,4 +1,4 @@
-.first-screen {
+.about {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, min-content) 1fr;
@@ -71,7 +71,7 @@
 }
 
 @media screen and (max-width: $tablet-width) {
-  .first-screen {
+  .about {
     grid-template-areas:
       "car-name"
       "title"
@@ -98,7 +98,7 @@
 }
 
 @media screen and (max-width: $mobile-width) {
-  .first-screen {
+  .about {
     padding: 62px 0 60px;
 
     &__text {

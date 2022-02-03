@@ -27,24 +27,20 @@
 @media screen and (max-width: $tablet-width) {
   .header {
     &__container {
-      position: relative;
       align-items: flex-start;
       justify-content: space-between;
-      padding: 16px 34px;
+      padding: 16px 32px;
     }
 
     &__nav {
       display: none;
 
       &_opened {
-        position: absolute;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 15px 28px;
-        top: 0;
-        left: 0;
-        width: 100%;
+        padding: 0;
+        flex-basis: 100%;
         background-color: $secondary-color;
       }
     }
@@ -60,6 +56,10 @@
       background-repeat: no-repeat;
       background-size: contain;
       border: none;
+
+      &_hidden {
+        display: none;
+      }
     }
   }
 }
@@ -67,7 +67,7 @@
 @media screen and (max-width: $mobile-width) {
   .header {
     &__container {
-      padding: 24px 18px;
+      padding: 25px 18px;
     }
 
     &__menu-button {

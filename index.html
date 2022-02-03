@@ -22,22 +22,22 @@
             <a href="#press-section" class="nav__link">Пресса</a>
           </li>
         </ul>
-        <button class="nav__close-button" aria-label="Закрыть меню"></button>
+        <button class="nav__close-button" aria-label="Закрыть меню" type="button"></button>
       </nav>
       <img src="./images/logo.svg" alt="Логотип журнала Auto-magazine" class="logo logo_place_header">
-      <button class="header__menu-button" aria-label="Открыть меню"></button>
+      <button class="header__menu-button" aria-label="Открыть меню" type="button"></button>
     </div>
   </header>
   <main class="main" aria-label="Автожурнал Auto-Magazine">
-    <section class="first-screen">
-      <p class="first-screen__text">volkswagen T1</p>
-      <h2 class="first-screen__title">Новая версия популярного микроавтобуса</h2>
-      <p class="first-screen__text first-screen__text_type_feature">С электро двигателем</p>
-      <button class="button first-screen__button">Подробнее</button>
-      <img src="./images/main-bus.jpg" alt="Микроавтобус на шоссе" class="first-screen__image">
+    <section class="about">
+      <p class="about__text">volkswagen T1</p>
+      <h1 class="about__title">Новая версия популярного микроавтобуса</h1>
+      <p class="about__text about__text_type_feature">С электро двигателем</p>
+      <button class="button about__button" type="button">Подробнее</button>
+      <img src="./images/main-bus.jpg" alt="Микроавтобус на шоссе" class="about__image">
     </section>
     <section id="facts-section" class="facts" aria-label="Факты о Volkswagen T1">
-      <p class="facts__text"><span class="facts__text_dedicated">VW T1 Electro:</span> Отделение Volkswagen Commercial Vehicles представило концепт e&#8209;Bulli: классический вэн T1 1966 года с электрической силовой установкой. По словам производителя, проект получит коммерческое продолжение, и через фирму-партнера eClassics наборы для конверсии микроавтобусов в электрокары и уже готовые машины будут продавать частным клиентам.</p>
+      <p class="facts__text"><span class="facts__subject">VW T1 Electro:</span> Отделение Volkswagen Commercial Vehicles представило концепт e&#8209;Bulli: классический вэн T1 1966 года с электрической силовой установкой. По словам производителя, проект получит коммерческое продолжение, и через фирму-партнера eClassics наборы для конверсии микроавтобусов в электрокары и уже готовые машины будут продавать частным клиентам.</p>
       <div class="facts__container facts__container_type_positive">
         <h3 class="facts__title">Плюсы</h3>
         <ul class=" list facts__list">
@@ -68,8 +68,8 @@
       <img src="./images/gallery-1.jpg" alt="Микроавтобус на дороге" class="gallery__image">
       <h2 class="title gallery__title">Галерея</h2>
       <div class="gallery__controls">
-        <button class="gallery__control gallery__control_type_back" aria-label="Назад"></button>
-        <button class="gallery__control gallery__control_type_forward" aria-label="Вперед"></button>
+        <button class="gallery__control gallery__control_type_back" aria-label="Назад" type="button"></button>
+        <button class="gallery__control gallery__control_type_forward" aria-label="Вперед" type="button"></button>
       </div>
     </section>
     <section id="press-section" class="press">
@@ -90,7 +90,7 @@
     </section>
   </main>
   <footer class="footer">
-    <form action="echo" class="form">
+    <form action="echo" class="form" name="subscription">
       <h2 class="form__title">Подписка</h2>
       <p class="form__text">На новые спецвыпуски машин.</p>
       <div class="form__container">
@@ -105,6 +105,6 @@
       <p class="footer__copyright">© Auto-Magazine 2021</p>
     </div>
   </footer>
-  <script src="./script/index.js"></script>
+  <script src="./scripts/index.js"></script>
 </body>
 </html>

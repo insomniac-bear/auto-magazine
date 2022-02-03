@@ -73,9 +73,19 @@
     border-radius: 50%;
     box-sizing: border-box;
     cursor: pointer;
+    transition: opacity .5s ease;
 
     &:disabled {
       background-color: $primary-color;
+      cursor: default;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &:hover {
+      opacity: .6;
     }
   }
 }

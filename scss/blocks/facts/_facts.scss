@@ -11,10 +11,12 @@
     font-size: 30px;
     line-height: 1.4;
     box-sizing: border-box;
+  }
 
-    &_dedicated {
-      font-weight: $normal-weight;
-    }
+  &__subject {
+    @include text-properties(400);
+    font-size: 30px;
+    line-height: 1.4;
   }
 
   &__container {
@@ -90,6 +92,11 @@
 
     &__text {
       margin: 18px auto;
+      font-size: 16px;
+      line-height: 1.69;
+    }
+
+    &__subject {
       font-size: 16px;
       line-height: 1.69;
     }
