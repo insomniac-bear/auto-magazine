@@ -1,0 +1,4 @@
+@mixin text-properties($font-weight: $light-weight) {
+  color: $primary-color;
+  font-weight: $font-weight;
+}

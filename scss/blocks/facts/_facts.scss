@@ -1,0 +1,131 @@
+.facts {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  box-sizing: border-box;
+  border-bottom: 1px solid $primary-color;
+
+  &__text {
+    @include text-properties();
+    margin: 40px 110px 45px 50px;
+    padding: 0;
+    font-size: 30px;
+    line-height: 1.4;
+    box-sizing: border-box;
+  }
+
+  &__subject {
+    @include text-properties(400);
+    font-size: 30px;
+    line-height: 1.4;
+  }
+
+  &__container {
+    padding: 40px 0 0 50px;
+    border-left: 1px solid $primary-color;
+  }
+
+  &__title {
+    @include text-properties($normal-weight);
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 1.23;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    margin: 51px 0 0 0;
+  }
+
+  &__item {
+    margin-bottom: 2px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__feature {
+    @include text-properties();
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    line-height: 1.45;
+  }
+}
+
+@media screen and (max-width: $tablet-width) {
+  .facts {
+    grid-template-areas:
+      "content content"
+      "positive negative";
+    grid-template-columns: 1fr 1fr;
+
+    &__text {
+      grid-area: content;
+      margin: 40px auto 45px;
+      width: 87.14%;
+    }
+
+    &__container {
+      padding-bottom: 278px;
+      border-top: 1px solid $primary-color;
+
+      &_type_positive {
+        grid-area: positive;
+        border-left: none;
+      }
+
+      &_type_negative {
+        grid-area: negative;
+      }
+    }
+  }
+}
+@media screen and (max-width: $mobile-width) {
+  .facts {
+    grid-template-areas:
+      "content"
+      "positive"
+      "negative";
+    grid-template-columns: 1fr;
+
+    &__text {
+      margin: 18px auto;
+      font-size: 16px;
+      line-height: 1.69;
+    }
+
+    &__subject {
+      font-size: 16px;
+      line-height: 1.69;
+    }
+
+    &__container {
+      padding: 19px 20px 20px;
+
+      &_type_negative {
+        border-left: none;
+      }
+    }
+
+    &__title {
+      font-size: 22px;
+      line-height: 1;
+    }
+
+    &__list {
+      margin-top: 40px;
+    }
+
+    &__item {
+      margin-bottom: 6px;
+    }
+
+    &__feature {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+  }
+}

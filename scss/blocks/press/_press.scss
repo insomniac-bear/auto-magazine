@@ -1,0 +1,31 @@
+.press {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid $primary-color;
+  box-sizing: border-box;
+
+  &__title {
+    @include text-properties($normal-weight);
+    margin: 0;
+    padding: 50px;
+    font-size: 46px;
+    line-height: 1;
+  }
+}
+
+@media screen and (max-width: $tablet-width) {
+  .press {
+    grid-template-columns: 1fr;
+
+    &__title {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+    }
+  }
+  
+}

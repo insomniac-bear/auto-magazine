@@ -1,0 +1,129 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, min-content) 1fr;
+  grid-template-areas:
+    "car-name image"
+    "title image"
+    "car-feature image"
+    "button image";
+  justify-items: center;
+  align-items: start;
+  margin: 0;
+  padding: 149px 0 150px 0;
+  max-width: $max-width;
+  min-width: $min-width;
+  width: 100%;
+  border-bottom: 1px solid $primary-color;
+  box-sizing: border-box;
+
+  &__text {
+    @include text-properties($normal-weight);
+    grid-area: car-name;
+    margin: 31px 0 0 0;
+    padding: 0;
+    font-size: 19px;
+    line-height: 1.47;
+    text-transform: uppercase;
+
+    &_type_feature {
+      margin-top: 52px;
+      grid-area: car-feature;
+    }
+  }
+
+  &__title {
+    @include text-properties($normal-weight);
+    grid-area: title;
+    margin: 30px 0 0 0;
+    padding: 0;
+    font-size: 65px;
+    line-height: 1.12;
+    text-align: center;
+  }
+
+  &__button {
+    @include text-properties($normal-weight);
+    grid-area: button;
+    margin-top:59px;
+    padding: 23px 135px 22px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: $secondary-color;
+    border: 1px solid $primary-color;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color .5s ease, color .5s ease;
+
+    &:hover {
+      color: $secondary-color;
+      background-color: $primary-color;
+    }
+}
+
+  &__image {
+    display: block;
+    grid-area: image;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: $tablet-width) {
+  .about {
+    grid-template-areas:
+      "car-name"
+      "title"
+      "car-feature"
+      "image"
+      "button";
+    grid-template-columns: 1fr;
+    padding: 69px 0 100px;
+
+    &__title {
+      width: 60%;
+    }
+
+    &__button {
+      margin-top: 99px;
+    }
+
+    &__image {
+      margin: 100px auto 0;
+      width: 91.14%;
+      height: 66.4vw;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .about {
+    padding: 62px 0 60px;
+
+    &__text {
+      margin: 0;
+      font-size: 11px;
+      line-height: 1.27;
+    }
+
+    &__title {
+      margin-top: 26px;
+      margin-bottom: 30px;
+      font-size: 38px;
+      line-height: 1.32;
+      width: 80%;
+    }
+
+    &__button {
+      margin-top: 59px;
+      padding: 23px 94px 22px;
+    }
+
+    &__image {
+      margin: 59px auto 0;
+      width: 88.14%;
+      height: 63.4vw
+    }
+  }
+}
