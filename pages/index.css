@@ -83,13 +83,13 @@
   margin: 0;
   padding: 0;
 }
-.logo_hidden {
-  display: none;
-}
 
 @media screen and (max-width: 1023px) {
   .logo {
     padding-left: 37%;
+  }
+  .logo_hidden {
+    display: none;
   }
 }
 @media screen and (max-width: 767px) {
@@ -118,6 +118,7 @@
   box-sizing: border-box;
 }
 .header__nav {
+  display: block;
   flex-basis: 43.1%;
 }
 .header__menu-button {
